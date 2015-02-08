@@ -1,7 +1,7 @@
 # grunt-wp-theme
 Grunt-int WordPress theme template
 
-#### Theme folde structure
+#### Theme folder structure
 
 
 
