@@ -1,2 +1,2 @@
 # grunt-wp-theme
-Grunt-int WordPress them template
+Grunt-int WordPress theme template
