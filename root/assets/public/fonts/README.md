@@ -1,2 +1,2 @@
 # Theme front-end fonts
-Place public fased css fonts here
+Place public facing css fonts here
