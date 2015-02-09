@@ -18,3 +18,4 @@
  ** after u can use {%= prefix %}_get_theme_version(), 
  **/
 require get_template_directory() . '/includes/helpers.php';
+
