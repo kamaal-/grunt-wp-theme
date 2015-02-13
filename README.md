@@ -2,27 +2,19 @@
 Grunt-int WordPress theme template
 
 #### Theme folder structure
-
-
-        .
+    .
+    ├── .DS_Store
     ├── .bowerrc
     ├── .jshintrc
     ├── Gruntfile.js
     ├── assets
     │   ├── README.md
     │   ├── admin
-    │   │   ├── README.md
-    │   │   ├── css
-    │   │   ├── fonts
-    │   │   ├── js
-    │   │   └── sprites
+    │   │   └── README.md
     │   └── public
     │       ├── README.md
-    │       ├── css
-    │       ├── fonts
-    │       │   └── README.md
-    │       ├── js
-    │       └── sprites
+    │       └── fonts
+    │           └── README.md
     ├── bower.json
     ├── config.rb
     ├── footer.php
@@ -31,8 +23,20 @@ Grunt-int WordPress theme template
     ├── includes
     │   └── helper.php
     ├── index.php
-    ├── languages
     └── src
-        └── README.md
-
+        ├── .DS_Store
+        ├── README.md
+        ├── sass
+        │   ├── .DS_Store
+        │   ├── base
+        │   │   ├── .DS_Store
+        │   │   ├── README.md
+        │   │   └── _base.scss
+        │   └── layouts
+        │       ├── .DS_Store
+        │       ├── README.md
+        │       └── _layouts.scss
+        └── vendor
+            └── README.md
+  
 
