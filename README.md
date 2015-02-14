@@ -3,10 +3,10 @@ Grunt-int WordPress theme template
 
 #### Theme folder structure
     .
-    ├── .DS_Store
     ├── .bowerrc
     ├── .jshintrc
     ├── Gruntfile.js
+    ├── README.md
     ├── assets
     │   ├── README.md
     │   ├── admin
@@ -24,16 +24,15 @@ Grunt-int WordPress theme template
     │   └── helper.php
     ├── index.php
     └── src
-        ├── .DS_Store
         ├── README.md
         ├── sass
-        │   ├── .DS_Store
         │   ├── base
-        │   │   ├── .DS_Store
         │   │   ├── README.md
         │   │   └── _base.scss
-        │   └── layouts
-        │       ├── .DS_Store
+        │   ├── layouts
+        │   │   ├── README.md
+        │   │   └── _layouts.scss
+        │   └── modules
         │       ├── README.md
         │       └── _layouts.scss
         └── vendor
