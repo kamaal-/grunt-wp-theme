@@ -48,7 +48,7 @@ Grunt-int WordPress theme template
             │   │   └── _layouts.scss
             │   └── modules
             │       ├── README.md
-            │       └── _module\ s.scss
+            │       └── _modules.scss
             └── vendor
                 └── README.md
   
