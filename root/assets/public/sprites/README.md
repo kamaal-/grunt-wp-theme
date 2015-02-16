@@ -1,0 +1,1 @@
+#SPRITES Directory for front-end
