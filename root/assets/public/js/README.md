@@ -1,0 +1,2 @@
+#PUBLIC JS Directory
+
