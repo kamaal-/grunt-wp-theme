@@ -1,6 +1,6 @@
 {
     "require": {
-        "composer/installers": "v1.0.12",
+        "composer/installers": "v1.0.21",
     	"webdevstudios/cmb2": "dev-master"
     },
 
