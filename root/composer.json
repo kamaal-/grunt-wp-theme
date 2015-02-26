@@ -1,0 +1,20 @@
+{
+    "require": {
+        "composer/installers": "v1.0.12",
+    	"webdevstudios/cmb2": "dev-master"
+    },
+
+    "config": {
+        "vendor-dir": "includes"
+    },
+
+    "autoload": {
+	    "files": ["includes/cmb2/init.php"]
+	},
+
+	"extra": {
+	    "installer-paths": {
+	    	"includes/{$name}/": ["webdevstudios/cmb2"]
+	    }
+	} 
+}
