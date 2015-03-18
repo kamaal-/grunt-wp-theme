@@ -149,7 +149,7 @@ module.exports = function( grunt ) {
 					'src/sass/*.scss',
 					'src/sass/base/*.scss',
 					'src/sass/layouts/*.scss',
-    				'src/sass/modules/*.scss'
+					'src/sass/modules/*.scss'
 				],
 				tasks : [ 'compass', 'csscomb', 'copy', 'cssmin'],
 				options: {
