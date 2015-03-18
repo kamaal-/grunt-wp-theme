@@ -60,15 +60,15 @@ module.exports = function( grunt ) {
 					banner : '/*\n'+
 							 ' * ﷽ \n' +
 							 ' *\n'+
-							 ' * Time: <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %>\n' +
-							 ' * Theme Name: <%= pkg.name %>\n' +
-							 ' * Theme URI: http://paristokyo.ae\n' +
-							 ' * Author: Kamaal Aboothalib\n' +
-							 ' * Author URI: http://kamaal.me\n' +
-							 ' * Description: <%= pkg.name %> Theme Designed and built with all the love in the world by @kml5ive. Sass -ified by Kamaal Aboothalib @kml5ive\n' +
-							 ' * Version: <%= pkg.version %> \n' +
-							 ' * Copyright: 2015 Kamaal Aboothalib <kamaal@kamaal.me> Licensed: under the Apache License v2.0 \n' +
-							 ' * Tags: fullscreen, background video, loop video, js-video, slider, fluid-layout, black, dark, backbonejs, ajax, requirejs \n' +
+							 ' * Time: <%= grunt.template.today("yyyy-mm-dd") %>\n' +
+							 ' * Theme Name: {% title %}\n' +
+							 ' * Theme URI: {% themeUri %}\n' +
+							 ' * Author: {% author %}\n' +
+							 ' * Author URI: {% authorWebsite %}\n' +
+							 ' * Description: {% title %} {% description %}' +
+							 ' * Version: {% version %} \n' +
+							 ' * Copyright: <%= grunt.template.today("yyyy") %> {% author %} <{% authorMail %}> Licensed: {% license %} \n' +
+							 ' * Tags: No tags \n' +
 							 ' * http://www.apache.org/licenses/LICENSE-2.0 \n' +
 							 ' */ \n'
 				},
