@@ -148,7 +148,7 @@ module.exports = function( grunt ) {
 				files : [
 					'src/sass/*.scss',
 					'src/sass/base/*.scss',
-					'src/sass/layouts/*.scss'
+					'src/sass/layouts/*.scss',
     				'src/sass/modules/*.scss'
 				],
 				tasks : [ 'compass', 'csscomb', 'copy', 'cssmin'],
