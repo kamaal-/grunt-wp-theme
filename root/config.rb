@@ -1,7 +1,7 @@
 # Require any additional compass plugins here.
 sass_dir           = "src/sass"
 http_path          = "/assets/public/"
-css_dir            = "#{http_path}/css"
+css_dir            = "src/css"
 fonts_dir          = "#{http_path}/fonts"
 images_dir         = "#{http_path}/sprites"
 javascripts_dir    = "#{http_path}/js"
