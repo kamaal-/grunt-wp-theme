@@ -1,10 +1,10 @@
 {
-  "name": "{% title %}",
-  "version": "{% version %}",
-  "description": "{% description %}",
+  "name": "{%= title %}",
+  "version": "{%= version %}",
+  "description": "{%= description %}",
   "author": {
-    "name": "{% author_name %}",
-    "website": "{% author_url %}"
+    "name": "{%= author_name %}",
+    "website": "{%= author_url %}"
   },
-  "dependencies":  {% dependancy %} 
+  "dependencies":  {%= dependancy %}
 }
