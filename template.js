@@ -43,6 +43,11 @@ exports.template = function( grunt, init, done ) {
 			default: 'Sass'
 		},
 		{
+			name: 'dependancy',
+			message : 'CSS Framework: Will you use "Bootstrap (b)", "Foundation (f)", "Bourboun (br)" or "Jeet (j)" ?',
+			default: 'b'
+		},
+		{
 			name: 'js_test',
 			message: 'Test your js? yes or no',
 			default: 'no'
@@ -103,6 +108,50 @@ exports.template = function( grunt, init, done ) {
 
 				props.devDependencies["grunt-contrib-sass"] = "~0.8.0";
 				props.css_preprocessor = 'sass';
+				break;
+		}
+
+		switch( props.dependancy.toLowerCase()[0] ) {
+			case 'b':
+				if('yes' === prop.fontawesome){
+					props.dependancy = {"bootstrap-sass": "^3.3.3", "font-awesome": "^4.3.0"};
+				}else{
+					props.dependancy = {"bootstrap-sass": "^3.3.3"};
+				}
+				break;
+
+			case 'f':
+
+				if('yes' === prop.fontawesome){
+					props.dependancy = {"foundation": "^5.5.1", "font-awesome": "^4.3.0"};
+				}else{
+					props.dependancy = {"foundation": "^5.5.1"};
+				}
+				
+				break;
+
+			case 'br':
+
+				if('yes' === prop.fontawesome){
+					props.dependancy = {"bourbon": "^4.2.1", "neat": "^1.7.2", "font-awesome": "^4.3.0"};
+				}else{
+					props.dependancy = {"bourbon": "^4.2.1", "neat": "^1.7.2" };
+				}
+				
+				break;
+
+			case 'j':
+
+				if('yes' === prop.fontawesome){
+					props.dependancy = {"jeet": "^6.1.2", "neat": "^1.7.2", "font-awesome": "^4.3.0"};
+				}else{
+					props.dependancy = {"jeet": "^6.1.2" };
+				}
+				
+				break;
+
+			default:
+				props.dependancy = {"bootstrap-sass": "^3.3.3", "font-awesome": "^4.3.0"};
 				break;
 		}
 
