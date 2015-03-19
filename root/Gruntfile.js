@@ -67,7 +67,7 @@ module.exports = function( grunt ) {
 							 ' * Author URI: {% author_url %}\n' +
 							 ' * Description: {% title %} {% description %}' +
 							 ' * Version: {% version %} \n' +
-							 ' * Copyright: <%= grunt.template.today("yyyy") %> {% author_name %} <{% author_mail %}> Licensed: {% license %} \n' +
+							 ' * Copyright: <%= grunt.template.today("yyyy") %> {% author_name %} <{% author_email %}> Licensed: {% license %} \n' +
 							 ' * Tags: No tags \n' +
 							 ' * http://www.apache.org/licenses/LICENSE-2.0 \n' +
 							 ' */ \n'
