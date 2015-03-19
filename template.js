@@ -114,18 +114,18 @@ exports.template = function( grunt, init, done ) {
 		switch( props.dependancy.toLowerCase()[0] ) {
 			case 'b':
 				if('yes' === props.fontawesome){
-					props.dependancy = {"bootstrap-sass": "^3.3.3", "font-awesome": "^4.3.0"};
+					props.dependancy = '"bootstrap-sass": "^3.3.3", "font-awesome": "^4.3.0"';
 				}else{
-					props.dependancy = {"bootstrap-sass": "^3.3.3"};
+					props.dependancy = '"bootstrap-sass": "^3.3.3"';
 				}
 				break;
 
 			case 'f':
 
 				if('yes' === props.fontawesome){
-					props.dependancy = {"foundation": "^5.5.1", "font-awesome": "^4.3.0"};
+					props.dependancy = '"foundation": "^5.5.1", "font-awesome": "^4.3.0"';
 				}else{
-					props.dependancy = {"foundation": "^5.5.1"};
+					props.dependancy = '"foundation": "^5.5.1"';
 				}
 				
 				break;
@@ -133,9 +133,9 @@ exports.template = function( grunt, init, done ) {
 			case 'br':
 
 				if('yes' === props.fontawesome){
-					props.dependancy = {"bourbon": "^4.2.1", "neat": "^1.7.2", "font-awesome": "^4.3.0"};
+					props.dependancy = '"bourbon": "^4.2.1", "neat": "^1.7.2", "font-awesome": "^4.3.0"';
 				}else{
-					props.dependancy = {"bourbon": "^4.2.1", "neat": "^1.7.2" };
+					props.dependancy = '"bourbon": "^4.2.1", "neat": "^1.7.2"';
 				}
 				
 				break;
@@ -143,15 +143,15 @@ exports.template = function( grunt, init, done ) {
 			case 'j':
 
 				if('yes' === props.fontawesome){
-					props.dependancy = {"jeet": "^6.1.2", "neat": "^1.7.2", "font-awesome": "^4.3.0"};
+					props.dependancy = '"jeet": "^6.1.2", "neat": "^1.7.2", "font-awesome": "^4.3.0"';
 				}else{
-					props.dependancy = {"jeet": "^6.1.2" };
+					props.dependancy = '"jeet": "^6.1.2"';
 				}
 				
 				break;
 
 			default:
-				props.dependancy = {"bootstrap-sass": "^3.3.3", "font-awesome": "^4.3.0"};
+				props.dependancy = '"bootstrap-sass": "^3.3.3", "font-awesome": "^4.3.0"';
 				break;
 		}
 

@@ -34,7 +34,7 @@ module.exports = function( grunt ) {
 
 
 		// copy font awesom
-		{% if ('yes' === fontawesome) { %}
+		{% if ('y' === fontawesome) { %}
 		copy : {
 			fonts : {
 				expand : true,
@@ -115,7 +115,7 @@ module.exports = function( grunt ) {
 
 
 		//js test 
-		{% if ('yes' === js_test) { %}
+		{% if ('y' === js_test) { %}
 		test :   {
 			files : ['assets/test/js/*.js']
 		},
