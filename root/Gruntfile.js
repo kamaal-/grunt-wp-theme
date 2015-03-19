@@ -156,7 +156,7 @@ module.exports = function( grunt ) {
 					debounceDelay: 500,
 					livereload: false
 				}
-			}
+			},
 			{% } %}
 
 			scripts : {

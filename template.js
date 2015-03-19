@@ -63,12 +63,24 @@ exports.template = function( grunt, init, done ) {
 		props.devDependencies = {
 			'grunt': '~0.4.5',
 			'matchdep': '~0.1.2',
-			'grunt-contrib-concat': '~0.5.0',
-			'grunt-contrib-uglify': '~0.6.0',
-			'grunt-contrib-cssmin': '~0.10.0',
-			'grunt-contrib-jshint': '~0.10.0',
-			'grunt-contrib-nodeunit': '~0.4.1',
-			'grunt-contrib-watch': '~0.6.1',
+			"grunt-contrib-clean": "^0.5.0",
+		    "grunt-contrib-compass": "^0.6.0",
+		    "grunt-contrib-compress": "^0.5.2",
+		    "grunt-contrib-concat": "^0.4.0",
+		    "grunt-contrib-connect": "^0.7.1",
+		    "grunt-contrib-copy": "^0.5.0",
+		    "grunt-contrib-cssmin": "^0.9.0",
+		    "grunt-contrib-jshint": "~0.7.0",
+		    "grunt-contrib-uglify": "~0.2.4",
+		    "grunt-contrib-watch": "~0.5.3",
+		    "grunt-csscomb": "^2.0.1",
+		    "grunt-jslint": "^1.1.8",
+		    "grunt-requirejs": "^0.4.2",
+		    "grunt-sass": "^0.12.0",
+		    "grunt-template": "^0.2.3",
+		    "jshint-stylish": "^0.1.5",
+		    "load-grunt-tasks": "^0.4.0",
+			'grunt-contrib-nodeunit': '~0.4.1'
 		};
 
 		// Sanitize names where we need to for PHP/JS
