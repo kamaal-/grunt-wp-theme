@@ -118,7 +118,6 @@ exports.template = function( grunt, init, done ) {
 				delete files[ 'assets/css/less/' + props.js_safe_name + '.less'];
 				delete files[ 'assets/css/src/' + props.js_safe_name + '.css' ];
 
-				props.devDependencies["grunt-contrib-sass"] = "~0.8.0";
 				props.css_preprocessor = 'sass';
 				break;
 		}
