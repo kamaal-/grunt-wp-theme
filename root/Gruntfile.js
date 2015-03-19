@@ -61,13 +61,13 @@ module.exports = function( grunt ) {
 							 ' * ﷽ \n' +
 							 ' *\n'+
 							 ' * Time: <%= grunt.template.today("yyyy-mm-dd") %>\n' +
-							 ' * Theme Name: {% title %}\n' +
+							 ' * Theme Name: {%= title %}\n' +
 							 ' * Theme URI: {% homepage %}\n' +
-							 ' * Author: {% author_name %}\n' +
+							 ' * Author: {%= author_name %}\n' +
 							 ' * Author URI: {% author_url %}\n' +
-							 ' * Description: {% title %} {% description %}' +
+							 ' * Description: {%= title %} {%= description %}' +
 							 ' * Version: {% version %} \n' +
-							 ' * Copyright: <%= grunt.template.today("yyyy") %> {% author_name %} <{% author_email %}> Licensed: {% license %} \n' +
+							 ' * Copyright: <%= grunt.template.today("yyyy") %> {%= author_name %} <{%= author_email %}> Licensed: {%= license %} \n' +
 							 ' * Tags: No tags \n' +
 							 ' * http://www.apache.org/licenses/LICENSE-2.0 \n' +
 							 ' */ \n'
@@ -124,8 +124,8 @@ module.exports = function( grunt ) {
 		uglify : {
 			options : {
 				banner : '/*! ﷽ \n' +
-						 ' * Author: Kamaal Aboothalib\n' +
-						 ' * Author URI: http://kamaal.me\n' +
+						 ' * Author: {%= author_name %}\n' +
+						 ' * Author URI: {%= author_url %}\n' +
 						 ' * <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd h:MM:ss") %> */\n',
 				compress : {
 					drop_console : false
