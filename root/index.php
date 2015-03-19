@@ -11,8 +11,8 @@
  ** @package {%= title %}
  ** @since {%= version %}
  **/
-
 get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+Ateliers de lecture et d’écriture – Writing and reading workshops

@@ -34,7 +34,7 @@ module.exports = function( grunt ) {
 
 
 		// copy font awesom
-		{% if ('sass' === fontawesome) { %}
+		{% if ('yes' === fontawesome) { %}
 		copy : {
 			fonts : {
 				expand : true,
@@ -62,9 +62,9 @@ module.exports = function( grunt ) {
 							 ' *\n'+
 							 ' * Time: <%= grunt.template.today("yyyy-mm-dd") %>\n' +
 							 ' * Theme Name: {% title %}\n' +
-							 ' * Theme URI: {% themeUri %}\n' +
+							 ' * Theme URI: {% homepage %}\n' +
 							 ' * Author: {% author %}\n' +
-							 ' * Author URI: {% authorWebsite %}\n' +
+							 ' * Author URI: {% authorUrl %}\n' +
 							 ' * Description: {% title %} {% description %}' +
 							 ' * Version: {% version %} \n' +
 							 ' * Copyright: <%= grunt.template.today("yyyy") %> {% author %} <{% authorMail %}> Licensed: {% license %} \n' +
@@ -115,7 +115,7 @@ module.exports = function( grunt ) {
 
 
 		//js test 
-		{% if ('sass' === js_test) { %}
+		{% if ('yes' === js_test) { %}
 		test :   {
 			files : ['assets/test/js/*.js']
 		},
