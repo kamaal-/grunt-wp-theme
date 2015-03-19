@@ -118,4 +118,4 @@ exports.template = function( grunt, init, done ) {
 		done();
 	});
 
-} );
+};
