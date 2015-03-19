@@ -63,11 +63,11 @@ module.exports = function( grunt ) {
 							 ' * Time: <%= grunt.template.today("yyyy-mm-dd") %>\n' +
 							 ' * Theme Name: {% title %}\n' +
 							 ' * Theme URI: {% homepage %}\n' +
-							 ' * Author: {% author %}\n' +
-							 ' * Author URI: {% authorUrl %}\n' +
+							 ' * Author: {% author_name %}\n' +
+							 ' * Author URI: {% author_url %}\n' +
 							 ' * Description: {% title %} {% description %}' +
 							 ' * Version: {% version %} \n' +
-							 ' * Copyright: <%= grunt.template.today("yyyy") %> {% author %} <{% authorMail %}> Licensed: {% license %} \n' +
+							 ' * Copyright: <%= grunt.template.today("yyyy") %> {% author_name %} <{% author_mail %}> Licensed: {% license %} \n' +
 							 ' * Tags: No tags \n' +
 							 ' * http://www.apache.org/licenses/LICENSE-2.0 \n' +
 							 ' */ \n'

@@ -3,8 +3,8 @@
   "version": "{% version %}",
   "description": "{% description %}",
   "author": {
-    "name": "{% author %}",
-    "website": "{% authorUri %}"
+    "name": "{% author_name %}",
+    "website": "{% author_url %}"
   },
   "dependencies": { {% dependancy %} }
 }

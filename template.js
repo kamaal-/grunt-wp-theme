@@ -33,9 +33,9 @@ exports.template = function( grunt, init, done ) {
 		init.prompt( 'description', 'The best WordPress theme ever made!' ),
 		init.prompt( 'homepage', 'http://kamaal.me' ),
 
-		init.prompt( 'author' ),
-		init.prompt( 'authorMail' ),
-		init.prompt( 'authorUrl', 'http://kamaal.me' ),
+		init.prompt( 'author_name' ),
+		init.prompt( 'author_email' ),
+		init.prompt( 'author_url', 'http://kamaal.me' ),
 		init.prompt( 'license', 'Licensed under the MIT License' ),
 		{
 			name: 'css_preprocessor',
