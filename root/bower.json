@@ -6,5 +6,8 @@
     "name": "{%= author_name %}",
     "website": "{%= author_url %}"
   },
-  "dependencies":  {%= dependancy %}
+  "dependencies":  { {%= each dependancy %}
+  					{%= key %}: {%= this %}
+				{%= /each%}
+				}
 }
