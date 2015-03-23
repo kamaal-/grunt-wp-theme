@@ -6,5 +6,5 @@
     "name": "{%= author_name %}",
     "website": "{%= author_url %}"
   },
-  "dependencies":  {{%= dependancy %}}
+  "dependencies":  {%= dependancy %}
 }
