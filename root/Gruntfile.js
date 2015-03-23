@@ -74,7 +74,8 @@ module.exports = function( grunt ) {
 							 ' */ \n'
 				},
 	        	files : {
-	          		'style.css': ['assets/public/css/empty.css']
+	        		// just one line css to cheat ignorance of cssmin
+	          		'style.css': ['src/css/empty.css']
 	        	}
 			} 
 		},

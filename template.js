@@ -74,7 +74,7 @@ exports.template = function( grunt, init, done ) {
 		}
 	], function( err, props ) {
 		props.keywords = [];
-		props.version = '0.1.0';
+		props.version = '1.0.0';
 		props.devDependencies = {
 			'grunt': '~0.4.5',
 			'matchdep': '~0.1.2',
