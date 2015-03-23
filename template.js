@@ -31,7 +31,7 @@ exports.template = function( grunt, init, done ) {
 			default: 'elephas'
 		},
 		init.prompt( 'description', 'The best WordPress theme ever made!' ),
-		init.prompt( 'homepage', 'http://kamaal.me' ),
+		init.prompt( 'homepage', 'http://paristokyo.ae' ),
 
 		init.prompt( 'author_name' ),
 		init.prompt( 'author_email' ),
@@ -43,9 +43,19 @@ exports.template = function( grunt, init, done ) {
 			default: 'Sass'
 		},
 		{
-			name: 'dependancy',
-			message : 'CSS Framework: Will you use "Bootstrap (b)", "Foundation (f)", "Bourboun (br)" or "Jeet (j)" ?',
-			default: 'b'
+			name: 'bootstrap',
+			message : 'Bootstrap Framework: Will you use "Bootstrap" yes[y] or no[n]?',
+			default: 'n'
+		},
+		{
+			name: 'jeet',
+			message : 'Jeet Grid Framework: Will you use "Jeet Grid", yes[y] or no[n]?',
+			default: 'n'
+		},
+		{
+			name: 'bourbon',
+			message : 'Bourbon Framework: Will you use "Bourbon & Neat Grid", yes[y] or no[n]?',
+			default: 'n'
 		},
 		{
 			name: 'js_test',
@@ -122,49 +132,27 @@ exports.template = function( grunt, init, done ) {
 				break;
 		}
 
-		switch( props.dependancy.toLowerCase()[0] ) {
-			case 'b':
-				if('yes' === props.fontawesome){
-					props.dependancy = '"bootstrap-sass": "^3.3.3", "font-awesome": "^4.3.0"';
-				}else{
-					props.dependancy = '"bootstrap-sass": "^3.3.3"';
-				}
-				break;
-
-			case 'f':
-
-				if('yes' === props.fontawesome){
-					props.dependancy = '"foundation": "^5.5.1", "font-awesome": "^4.3.0"';
-				}else{
-					props.dependancy = '"foundation": "^5.5.1"';
-				}
-				
-				break;
-
-			case 'br':
-
-				if('yes' === props.fontawesome){
-					props.dependancy = '"bourbon": "^4.2.1", "neat": "^1.7.2", "font-awesome": "^4.3.0"';
-				}else{
-					props.dependancy = '"bourbon": "^4.2.1", "neat": "^1.7.2"';
-				}
-				
-				break;
-
-			case 'j':
-
-				if('yes' === props.fontawesome){
-					props.dependancy = '"jeet": "^6.1.2", "neat": "^1.7.2", "font-awesome": "^4.3.0"';
-				}else{
-					props.dependancy = '"jeet": "^6.1.2"';
-				}
-				
-				break;
-
-			default:
-				props.dependancy = '"bootstrap-sass": "^3.3.3", "font-awesome": "^4.3.0"';
-				break;
+		if('y' === props.fontawesome){
+			props.dependancy["font-awesome"] = "^4.3.0";
 		}
+
+		if('y' === props.bootstrap){
+			props.dependancy["bootstrap-sass"] = "^3.3.3";
+		}
+
+		if('y' === props.foundation){
+			props.dependancy["foundation"] = "^5.5.1";
+		}
+
+		if('y' === props.jeet){
+			props.dependancy["jeet"] = "^6.1.2";
+		}
+
+		if('y' === props.bourbon){
+			props.dependancy["bourbon"] = "^4.2.1";
+			props.dependancy["neat"] = "^1.7.2";
+		}
+		
 
 		console.log( files );
 

@@ -1,0 +1,12 @@
+{% if ('y' === jeet) { %}
+@import '../../vendor/jeet/scss/jeet/index.scss';
+{% } %}
+
+{% if ('y' === bootstrap) { %}
+@import '../../vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+{% } %}
+
+{% if ('y' === bourbon) { %}
+@import '../../vendor/bourbon/app/assets/stylesheets/_bourbon.scss';
+@import '../../vendor/neat/app/assets/stylesheets/_neat.scss';
+{% } %}

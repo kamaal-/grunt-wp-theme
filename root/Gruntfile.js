@@ -27,8 +27,9 @@ module.exports = function( grunt ) {
 		// css comb
 		csscomb : {
 			distribute : {
-				expand : true,
-				'assets/public/css/app.css': ['src/css/main.css']
+				files: {
+                	'assets/public/css/app.css': ['src/css/main.css']
+            	}
 			}
 		},
 
@@ -62,11 +63,11 @@ module.exports = function( grunt ) {
 							 ' *\n'+
 							 ' * Time: <%= grunt.template.today("yyyy-mm-dd") %>\n' +
 							 ' * Theme Name: {%= title %}\n' +
-							 ' * Theme URI: {% homepage %}\n' +
+							 ' * Theme URI: {%= homepage %}\n' +
 							 ' * Author: {%= author_name %}\n' +
 							 ' * Author URI: {% author_url %}\n' +
 							 ' * Description: {%= title %} {%= description %}' +
-							 ' * Version: {% version %} \n' +
+							 ' * Version: {%= version %} \n' +
 							 ' * Copyright: <%= grunt.template.today("yyyy") %> {%= author_name %} <{%= author_email %}> Licensed: {%= license %} \n' +
 							 ' * Tags: No tags \n' +
 							 ' * http://www.apache.org/licenses/LICENSE-2.0 \n' +
