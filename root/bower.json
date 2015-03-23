@@ -10,9 +10,8 @@
 	  	{% if ('y' === jeet) { %}"jeet" : "^6.1.2",{% } %}
 	  	{% if ('y' === fontawesome) { %}"font-awesome" : "^4.3.0",{% } %}
 	  	{% if ('y' === bootstrap) { %}"bootstrap-sass" : "^3.3.3",{% } %}
-	  	{% if ('y' === bourbon) { %}
-	  		"bourbon" : "^4.2.1",
-	  		"neat" : "^1.7.2"
+	  	{% if ('y' === bourbon) { %}"bourbon" : "^4.2.1",
+	  	"neat" : "^1.7.2"
 	  	{% } %}
   	}
 }

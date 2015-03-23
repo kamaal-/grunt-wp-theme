@@ -1,4 +1,5 @@
-{
+{   
+    {%= if('y' === cmb) { %}
     "require": {
         "composer/installers": "v1.0.21",
     	"webdevstudios/cmb2": "dev-master"
@@ -16,5 +17,6 @@
 	    "installer-paths": {
 	    	"includes/{$name}/": ["webdevstudios/cmb2"]
 	    }
-	} 
+	}
+    {% } %}
 }

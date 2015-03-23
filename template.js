@@ -43,6 +43,11 @@ exports.template = function( grunt, init, done ) {
 			default: 'Sass'
 		},
 		{
+			name: 'cmb',
+			message : 'Custom metabox: Will you use "WordPress Custom Metabox CMB2 Library" yes[y] or no[n]?',
+			default: 'n'
+		},
+		{
 			name: 'bootstrap',
 			message : 'Bootstrap Framework: Will you use "Bootstrap" yes[y] or no[n]?',
 			default: 'n'
