@@ -1,13 +1,26 @@
 {
-  "name": "{%= title %}",
-  "version": "{%= version %}",
-  "description": "{%= description %}",
-  "author": {
-    "name": "{%= author_name %}",
-    "website": "{%= author_url %}"
-  },
-  "dependencies":  { {%= each dependancy %}
-  					{%= key %}: {%= this %}
-				{%= /each%}
-				}
+  	"name": "{%= title %}",
+  	"version": "{%= version %}",
+  	"description": "{%= description %}",
+  	"author": {
+    	"name": "{%= author_name %}",
+    	"website": "{%= author_url %}"
+  	},
+  	"dependencies": {
+
+	  	{% if ('y' === jeet) { %}
+	  		"jeet" : "^6.1.2",
+	  	{% } %}
+	  	{% if ('y' === fontawesome) { %}
+	  		"font-awesome" : "^4.3.0",
+	  	{% } %}
+	  	{% if ('y' === bootstrap) { %}
+	  		"bootstrap-sass" : "^3.3.3",
+	  	{% } %}
+	  	{% if ('y' === bourbon) { %}
+	  		"bourbon" : "^4.2.1",
+	  		"neat" : "^1.7.2"
+	  	{% } %}
+  
+  	}
 }

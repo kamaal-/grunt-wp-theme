@@ -129,28 +129,6 @@ exports.template = function( grunt, init, done ) {
 				break;
 		}
 
-		if('y' === props.fontawesome){
-			props.dependancy["font-awesome"] = "^4.3.0";
-		}
-
-		if('y' === props.bootstrap){
-			props.dependancy["bootstrap-sass"] = "^3.3.3";
-		}
-
-		if('y' === props.foundation){
-			props.dependancy["foundation"] = "^5.5.1";
-		}
-
-		if('y' === props.jeet){
-			props.dependancy["jeet"] = "^6.1.2";
-		}
-
-		if('y' === props.bourbon){
-			props.dependancy["bourbon"] = "^4.2.1";
-			props.dependancy["neat"] = "^1.7.2";
-		}
-		
-
 		console.log( files );
 
 		// Actually copy and process files
