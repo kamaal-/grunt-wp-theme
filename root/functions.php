@@ -13,9 +13,6 @@
  ** @since {%= version %}
  **/
 
-$prefix_upper = strtoupper('{%= prefix %}');
-
-define( $prefix_upper .'_DEBUG', TRUE );
 
 /**
  ** Custom utility functions that required for the theme.

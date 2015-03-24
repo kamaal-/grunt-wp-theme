@@ -1,5 +1,10 @@
 <?php
 
+$prefix_upper = strtoupper('{%= prefix %}');
+
+define( $prefix_upper .'_DEBUG', TRUE );
+
+
 if( !function_exists( '{%= prefix %}_get_theme_version' ) ):
   
 /**
