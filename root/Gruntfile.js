@@ -116,6 +116,23 @@ module.exports = function( grunt ) {
 		},
 
 
+		concat: {
+		    options: {
+		      	separator: ';',
+		    },
+
+		    dist: {
+		      	src : [
+					'src/js/plugins.js',
+					// place your jQuery plugins here
+
+					'src/js/app.js'
+				],
+		      	dest: 'assets/public/js/app.js'
+		    },
+		},
+
+
 		//js test 
 		{% if ('y' === js_test) { %}
 		test :   {
@@ -136,8 +153,7 @@ module.exports = function( grunt ) {
 
 			build : {
 				src : [
-					'src/js/plugins.js',
-					'src/js/app.js'
+					'assets/public/js/app.js'
 				],
 				dest: 'assets/public/js/app.min.js'
 			}
