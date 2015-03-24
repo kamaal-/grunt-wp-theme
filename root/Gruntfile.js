@@ -169,7 +169,7 @@ module.exports = function( grunt ) {
 					'src/sass/layouts/*.scss',
 					'src/sass/modules/*.scss'
 				],
-				tasks : [ 'compass', 'csscomb', 'copy', 'cssmin'],
+				tasks : [ 'compass', 'csscomb', 'copy', 'cssmin', 'concat'],
 				options: {
 					debounceDelay: 500,
 					livereload: false
@@ -194,7 +194,7 @@ module.exports = function( grunt ) {
 
 	require('load-grunt-tasks')(grunt);
 
-	grunt.registerTask('default', ['jshint']);
+	grunt.registerTask('default', ['compass', 'csscomb', {% if ('y' === fontawesome) { %} 'copy', {% } %}'cssmin', 'concat']);
   	grunt.registerTask('test', 'jshint');
 
 };
