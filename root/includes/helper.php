@@ -1,8 +1,8 @@
 <?php
 
-$prefix_upper = strtoupper('{%= prefix %}');
 
-define( $prefix_upper .'_DEBUG', TRUE );
+
+define( 'ELEPHAS_DEBUG', TRUE );
 
 
 if( !function_exists( '{%= prefix %}_get_theme_version' ) ):
@@ -36,7 +36,7 @@ if( !function_exists( '{%= prefix %}_script_prefix' ) ):
  **/
 function {%= prefix %}_script_prefix() {
 
-  return $prefix_upper .'_DEBUG' ? '.min' : '';
+  return ELEPHAS_DEBUG ? '.min' : '';
 
 }
 
