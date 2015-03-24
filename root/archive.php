@@ -3,7 +3,9 @@
  ** The template for displaying archive pages.
  **
  ** Learn more: http://codex.wordpress.org/Template_Hierarchy
- **
+ ** the_archive_description : https://developer.wordpress.org/reference/functions/the_archive_title/
+ ** the_archive_description : https://developer.wordpress.org/reference/functions/the_archive_description/
+ ** 
  ** @package {%= title %}
  ** @since {%= version %}
  **/
