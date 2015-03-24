@@ -75,7 +75,7 @@ function {%= prefix %}_entry_footer() {
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', '{%= prefix %}' ) );
-		if ( $categories_list && _s_categorized_blog() ) {
+		if ( $categories_list && {%= prefix %}_categorized_blog() ) {
 			printf( '<span class="cat-links">' . __( 'Posted in %1$s', '{%= prefix %}' ) . '</span>', $categories_list );
 		}
 		/* translators: used between list items, there is a space after the comma */
