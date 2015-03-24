@@ -139,6 +139,21 @@ add_action( 'wp_enqueue_scripts', '{%= prefix %}_enqueue_scripts' );
 
 
 /**
- * Custom template tags for this theme.
- */
+ ** Custom template tags for this theme.
+ **
+ ** @package {%= title %}
+ ** @since {%= version %}
+ **/
 require get_template_directory() . '/includes/template-tags.php';
+
+
+
+/**
+ ** Customizer additions.
+ **
+ ** @package {%= title %}
+ ** @since {%= version %}
+ **/
+require get_template_directory() . '/includes/customizer.php';
+
+
