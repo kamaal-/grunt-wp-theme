@@ -31,12 +31,12 @@ add_filter( 'body_class', '{%= prefix %}_body_classes' );
 
 if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	/**
-	 * Filters wp_title to print a neat <title> tag based on what is being viewed.
-	 *
-	 * @param string $title Default title text for current view.
-	 * @param string $separator Optional separator.
-	 * @return string The filtered title.
-	 */
+	 ** Filters wp_title to print a neat <title> tag based on what is being viewed.
+	 **
+	 ** @param string $title Default title text for current view.
+	 ** @param string $separator Optional separator.
+	 ** @return string The filtered title.
+	 **/
 	function {%= prefix %}_wp_title( $title, $separator ) {
 		if ( is_feed() ) {
 			return $title;
@@ -68,4 +68,5 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 		<?php
 	}
 	add_action( 'wp_head', '{%= prefix %}_render_title' );
+
 endif;
