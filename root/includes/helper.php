@@ -36,7 +36,7 @@ if( !function_exists( '{%= prefix %}_script_prefix' ) ):
  **/
 function {%= prefix %}_script_prefix() {
 
-  return ELEPHAS_DEBUG ? '.min' : '';
+  return ELEPHAS_DEBUG ? '' : '.min';
 
 }
 
