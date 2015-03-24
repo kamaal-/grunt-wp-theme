@@ -19,3 +19,21 @@ function {%= prefix %}_get_theme_version() {
 
 endif;
 
+
+if( !function_exists( '{%= prefix %}_script_prefix' ) ):
+  
+/**
+ ** Returns theme version.
+ **
+ ** @package {%= title %}
+ ** @since {%= version %}
+ ** @return string
+ **/
+function {%= prefix %}_script_prefix() {
+
+  return $prefix_upper .'_DEBUG' ? '.min' : '';
+
+}
+
+
+endif;
