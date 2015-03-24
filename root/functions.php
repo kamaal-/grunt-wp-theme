@@ -147,6 +147,14 @@ add_action( 'wp_enqueue_scripts', '{%= prefix %}_enqueue_scripts' );
 require get_template_directory() . '/includes/template-tags.php';
 
 
+/**
+ ** Custom functions that act independently of the theme templates.
+ **
+ ** @package {%= title %}
+ ** @since {%= version %}
+ **/
+require get_template_directory() . '/includes/extras.php';
+
 
 /**
  ** Customizer additions.
